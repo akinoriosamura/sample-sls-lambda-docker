@@ -68,12 +68,15 @@ functions:
   hello:
     image:
       name: fastapiImage
-    events:
-      - http:
-          integration: lambda-proxy
-          path: /{proxy+}
-          method: ANY
-          cors: true
+    # use lambda urls
+    url: true
+    # use api gateway
+    # events:
+    #   - http:
+    #       integration: lambda-proxy
+    #       path: /{proxy+}
+    #       method: ANY
+    #       cors: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
