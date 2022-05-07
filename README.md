@@ -1,3 +1,12 @@
+## change url setting
+ - use lambda url
+
+comment out events setting and uncomment `url: true`
+ - use api gateway
+
+comment out `url: true` and uncomment events setting
+
+## ref
 https://zenn.dev/qazx7412/articles/75862c72d6effa
 https://zenn.dev/mini_hiori/articles/mangum-serverless
 https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/python-image.html
